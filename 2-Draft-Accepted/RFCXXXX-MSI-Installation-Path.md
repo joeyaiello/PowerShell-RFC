@@ -42,9 +42,10 @@ We also provide the version of PowerShell in the FileVersion object associated w
   an in-place update of that stable build shall be performed.
 * When a preview MSI is run on a machine that already has a preview PowerShell Core 6.x installed,
   an in-place update of that preview build shall be performed.
-* No installation of a preview build shall interfere with a stable build, and vice versa
+* By default, no installation of a preview build shall interfere with a stable build, and vice versa
     * This includes an implicit requirement that `Install-PowerShellRemoting.ps1` create a different endpoint name for the preview build.
-    * A UI option will be added to the MSI to add the product to the path.  The option will be defaulted on for stable builds and off for preview builds.
+    * A UI option will be added to the MSI to add the product to the path.
+      The option will be defaulted on for stable builds and off for preview builds.
 
 ## Alternate Considerations and Proposals
 
